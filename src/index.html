@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priceless</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/templates.css">
+    <link rel="shortcut icon" href="./images/icon.jpg" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+
+</head>
+
+<body>
+    <div id="scroll-container" data-rellax-speed="-4">
+        <div style="height: 40vw;" class="presentation">
+            <div class="name_and_age">
+                <h1>ZAKKARIA BENDRER</h1>
+                <p>21ans, 1M82</p>
+            </div>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A nam porro hic, illum quod ipsum vitae
+                praesentium soluta earum cumque unde corrupti et excepturi eveniet necessitatibus, perspiciatis
+                accusamus? Dolorem, consequuntur.</p>
+
+            <div class="contact">
+                <a href=""><img src="./images/instagram.png" alt="instagram">@Zack</a>
+                <a href=""><img src="./images/tiktok.png" alt="tiktok">@zack</a>
+                <a href="mailto:"><img src="./images/gmail.png" alt="mail">Mail@mail.fr</a>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:svgjs="http://svgjs.com/svgjs" width="2.2vw" height="2.Zvw" x="0" y="0" viewBox="0 0 492 492"
+                style="enable-background:new 0 0 512 512" xml:space="preserve" class="animated-arrow">
+                <g>
+                    <path
+                        d="m442.668 268.536-16.116-16.12c-5.06-5.068-11.824-7.872-19.024-7.872-7.208 0-14.584 2.804-19.644 7.872L283.688 355.992V26.924C283.688 12.084 272.856 0 258.02 0h-22.804c-14.832 0-28.404 12.084-28.404 26.924v330.24L102.824 252.416c-5.068-5.068-11.444-7.872-18.652-7.872-7.2 0-13.776 2.804-18.84 7.872l-16.028 16.12c-10.488 10.492-10.444 27.56.044 38.052l177.576 177.556c5.056 5.056 11.84 7.856 19.1 7.856h.076c7.204 0 13.972-2.8 19.028-7.856l177.54-177.552c10.496-10.488 10.496-27.564 0-38.056z"
+                        stroke="#000000" data-original="#000000" class="">
+                    </path>
+                </g>
+            </svg>
+
+        </div>
+        <hr>
+        <hr>
+        <ul>
+            <li class="item" id="oui" onclick="showContainer()">
+                <div class="item__background"
+                    style="background-image: url(./images/studio.jpg); backdrop-filter: blur(30%) ;"></div>
+                <div class="item__content">
+                    <span class="item__number">O1</span>
+                    <h2>Seul, dans le gris</h2>
+                    <div class="item__metas">
+                        <span>01/01/2021</span>
+                        <strong>Studio, Marseille</strong>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="item" onclick="showParisContainer()">
+
+                <div class="item__background" style="background-image: url(./images/studio.jpg);"></div>
+
+                <div class="item__content">
+                    <span class="item__number">O2</span>
+                    <h2>Une nuit à Paris</h2>
+                    <div class="item__metas">
+                        <span>02/02/2022</span>
+                        <strong>Paris</strong>
+                    </div>
+                </div>
+
+
+            </li>
+            <li class="item">
+                <div class="item__background" style="background-image: url(./images/muceum.jpg);"></div>
+                <div class="item__content">
+                    <span class="item__number">O3</span>
+                    <h2>You could be a star</h2>
+                    <div class="item__metas">
+                        <span>03/03/2023</span>
+                        <strong>Muceum, Marseille</strong>
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="item__background" style="background-image: url(./images/paris.jpg);"></div>
+
+                <div class="item__content">
+                    <span class="item__number">O4</span>
+                    <h2>You are a star</h2>
+                    <div class="item__metas">
+                        <span>04/04/2024</span>
+                        <strong>Paris</strong>
+                    </div>
+                </div>
+
+            </li>
+
+            <li class="item">
+                <div class="item__background" style="background-image: url(./images/paris.jpg);"></div>
+
+                <div class="item__content">
+                    <span class="item__number">O5</span>
+                    <h2>Masculine affair</h2>
+                    <div class="item__metas">
+                        <span>04/04/2024</span>
+                        <strong>Paris</strong>
+                    </div>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+
+
+
+    <div class="container hidden brahim">
+        <div class="close-btn" onclick="hideContainer()">&times;</div>
+        <div class="display">
+            <img src="./images/shooting1_0.jpg" alt="">
+        </div>
+        <div class="thumbnails">
+            <img src="./images/shooting1_0.jpg" alt="" onclick="changeImage(event)">
+            <img src="./images/shooting1_2.jpg" alt="" onclick="changeImage(event)">
+            <img src="./images/shooting1_3.jpg" alt="" onclick="changeImage(event)">
+        </div>
+        <div class="description">
+            <p>Face à la lumière, face a soi-même.</p>
+            <h4>•Seul, dans le gris•</h4>
+        </div>
+    </div>
+
+    <div class="pariscontainer true false">
+        <div class="close-btn" onclick="hideContainer()">&times;</div>
+        <div class="display">
+            <img src="./images/shooting2_0.jpg" alt="">
+        </div>
+        <div class="thumbnails">
+            <img src="./images/shooting2_0.jpg" alt="" onclick="changeImage(event)">
+            <img src="./images/shooting2_1.jpg" alt="" onclick="changeImage(event)">
+            <img src="./images/shooting2_2.jpg" alt="" onclick="changeImage(event)">
+        </div>
+        <div class="description">
+            <p>Une nuit à Paris</p>
+            <h4>•Seul, dans le gris•</h4>
+        </div>
+
+    </div>
+
+    <div style="height:100vh;"></div>
+
+    <script>
+        function showContainer() {
+
+            const container = document.querySelector('.container');
+            container.classList.remove('brahim');
+            setTimeout(() => {
+                container.classList.remove('hidden');
+
+                container.addEventListener('transitionend', function removeHiddenClass() {
+                    container.classList.remove('hidden');
+                    document.getElementById('oui').removeEventListener('click', showContainer);
+                    container.removeEventListener('transitionend', removeHiddenClass);
+                });
+            }, 10);
+        };
+
+        function hideContainer() {
+            const container = document.querySelector('.container');
+            container.classList.add('hidden');
+
+            container.addEventListener('transitionend', function restoreHiddenClass() {
+                container.classList.add('brahim');
+                document.getElementById('oui').addEventListener('click', showContainer);
+                container.removeEventListener('transitionend', restoreHiddenClass);
+            });
+        }
+
+        function changeImage(event) {
+            const mainImage = document.querySelector('.display img');
+            mainImage.src = event.target.src;
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            const items = document.querySelectorAll(".item");
+
+            function onScroll() {
+                items.forEach((item) => {
+                    const itemTop = item.getBoundingClientRect().top;
+                    const itemHeight = item.offsetHeight;
+                    const windowHeight = window.innerHeight;
+
+                    if (itemTop + itemHeight * 0.8 < windowHeight) {
+                        item.classList.add("visible");
+                    } else {
+                        item.classList.remove("visible");
+                    }
+                });
+            }
+
+            window.addEventListener("scroll", onScroll);
+            onScroll();
+        });
+
+        function showParisContainer() {
+
+            const pariscontainer = document.querySelector('.pariscontainer');
+            container.classList.remove('true');
+            setTimeout(() => {
+                container.classList.remove('hidden');
+
+                container.addEventListener('transitionend', function removeHiddenClass() {
+                    container.classList.remove('hidden');
+                    document.getElementById('oui').removeEventListener('click', showContainer);
+                    container.removeEventListener('transitionend', removeHiddenClass);
+                });
+            }, 10);
+
+
+            const petalContainer = document.createElement('div');
+            petalContainer.style.position = 'absolute';
+            petalContainer.style.top = '0';
+            petalContainer.style.left = '0';
+            petalContainer.style.width = '100%';
+            petalContainer.style.height = '100%';
+
+            for (let i = 0; i < 60; i++) {
+                const petal = document.createElement('img');
+                petal.src = './images/petale.png';
+                petal.alt = 'Pétale de rose';
+                petal.style = 'width: 64px;'
+                petal.className = 'petal';
+
+
+                // Positionner les pétales de façon aléatoire sur l'écran
+                petal.style.left = Math.random() * 100 + '%';
+                petal.style.animationDuration = Math.random() * 2 + 's';  // durée d'animation aléatoire pour plus de réalisme
+
+                petalContainer.appendChild(petal);
+
+            }
+            console.log(petalContainer);
+            document.body.appendChild(petalContainer);
+
+        };
+
+    </script>
+
+</body>
+
+</html>

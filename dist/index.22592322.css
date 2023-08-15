@@ -1,0 +1,141 @@
+h4 {
+  margin-top: 1vw;
+  font-family: Righteous, cursive;
+  font-size: 3vw;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  align-items: center;
+  transition: opacity 1s, transform 1s;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.container.hidden {
+  opacity: 0;
+  transform: translateY(50%);
+}
+
+.container.brahim {
+  display: none;
+}
+
+.container .display {
+  width: 45%;
+  height: 100%;
+}
+
+.container .display img {
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid #fff;
+}
+
+.container .thumbnails {
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.container .thumbnails img {
+  width: 100%;
+  height: 25%;
+  object-fit: cover;
+  cursor: pointer;
+  background: #fff;
+  padding: 1vw 1vw 2vw;
+}
+
+.container .description {
+  width: 35%;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.container .description h4 {
+  text-align: center;
+  font-size: 3vw;
+}
+
+.container .description p {
+  text-align: center;
+}
+
+.container .close-btn {
+  color: #000;
+  cursor: pointer;
+  font-size: 4rem;
+  position: fixed;
+  top: 0;
+  right: 20px;
+}
+
+@media screen and (max-width: 645px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+  }
+
+  .container .display {
+    width: 100%;
+    height: 60%;
+    order: 2;
+    justify-content: center;
+    display: flex;
+  }
+
+  .container .thumbnails {
+    flex-direction: row;
+    order: 3;
+    gap: 1vw;
+    margin: 0;
+  }
+
+  .container .description {
+    width: 100%;
+    flex-direction: column;
+    order: 1;
+    align-items: center;
+    display: flex;
+  }
+
+  .container .description h4 {
+    text-align: start;
+    margin-bottom: 1vw;
+    font-size: 5vw;
+  }
+
+  .container .description p {
+    display: none;
+  }
+
+  .container .close-btn {
+    font-size: 3rem;
+    position: fixed;
+    top: -6px;
+    right: 2vw;
+  }
+}
+
+@media screen and (min-width: 645px) and (max-width: 950px) {
+  .container {
+    justify-content: space-between;
+  }
+
+  .container .thumbnails {
+    margin-right: 17vw;
+  }
+
+  .container .description {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=index.22592322.css.map */

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/template.5e7a038f.css">
+    <link rel="shortcut icon" href="/icon.142569ea.jpg" type="image/x-icon">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="oui" id="oui" onclick="showContainer()">CLIQUE MOI</div>
+    <div class="container hidden">
+        <div class="display">
+            <img src="/shooting1_0.3168ddb3.jpg" alt="">
+        </div>
+        <div class="thumbnails">
+            <img src="/shooting1_0.3168ddb3.jpg" alt="" onclick="changeImage(event)">
+            <img src="/shooting1_2.435c1aea.jpg" alt="" onclick="changeImage(event)">
+            <img src="/shooting1_3.0d18b403.jpg" alt="" onclick="changeImage(event)">
+        </div>
+        <div class="description">
+            <h4>•Seul, dans le gris•</h4>
+            <p>Face à la lumière, face a soi-même.</p>
+            <span>Studio, Marseille</span>
+        </div>
+    </div>
+
+    <script>function changeImage(event) {
+    const mainImage = document.querySelector(".display img");
+    mainImage.src = event.target.src;
+}
+function showContainer() {
+    const container = document.querySelector(".container");
+    container.classList.remove("hidden");
+    // Attendre la fin de l'animation avant de supprimer l'écouteur d'événements
+    container.addEventListener("transitionend", function removeHiddenClass() {
+        container.classList.remove("hidden");
+        document.getElementById("oui").removeEventListener("click", showContainer);
+        container.removeEventListener("transitionend", removeHiddenClass);
+    });
+}
+
+</script>
+      
+<script src="/template.7262b0df.js"></script></body>
+
+</html>
